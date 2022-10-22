@@ -53,6 +53,7 @@ body {
   width: 12vw;
   height: 16vw;
   margin: 0vh 5vh;
+  margin-bottom: 3vh;
 
   display: flex;
   justify-content: center;
