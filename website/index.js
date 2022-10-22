@@ -1,3 +1,5 @@
+import { WEATHER_API_KEY, CITY, STATE } from "./env.js";
+
 const clock = document.getElementById("clock");
 
 function runClock() {
@@ -9,6 +11,14 @@ function runClock() {
 
   const timestr = `${hours}:${mins}:${secs}`;
   clock.innerText = timestr;
+
+  
+}
+
+function getUri() {
+  let options = '&options=preview'
+  let uri = `weather.visualcrossing.com/VisualCrossingWebServices/rest/services/
+            timeline/${CITY}%20${STATE}?unitGroup=us&key=${WEATHER_API_KEY}&contentType=json`
 }
 
 setInterval(function() {
