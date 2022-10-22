@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/lulo-clean');
+@import url('http://fonts.cdnfonts.com/css/open-sans');
 
 html {
   font-family: 'Lulo Clean', sans-serif;
@@ -21,21 +22,19 @@ body {
   margin-bottom: 0px;
 }
 
-.cur {
-  border: 2px solid white;
-  width: 10px;
-  height: 10px;
+#current-cond {
+  margin: auto;
+  margin-bottom: 0px;
 }
 
 #clock {
-  margin: 3vh auto;
+  margin: 1vh auto;
+  padding-left: 8vh;
   
   color: white;
   font-size: 32vh;
-  line-height: 36vh;
+  line-height: 39vh;
   height: 32vh;
-
-  padding-left: 3.75vh;
 }
 
 #forecast {
@@ -45,11 +44,41 @@ body {
 }
 
 .forecast-item {
-  border: 2px solid white;
-  width: 10px;
-  height: 10px;
+  font-family: 'Open Sans', sans-serif;
+
+  width: 12vw;
+  height: 16vw;
+  margin: 0vh 5vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+
+  text-align: center;
 }
 
 .forecast-img {
+  filter: invert(100%);
+  height: 6vw;
+}
 
+.forecast-date {
+  margin-top: 1vh;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.forecast-high {
+  font-size: 4vh;
+}
+
+.forecast-low {
+  font-size: 3vh;
+}
+
+#cur-sunrise {
+ font-size: 4vh; 
 }
