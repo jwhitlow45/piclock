@@ -1,4 +1,4 @@
-import { WEATHER_API_KEY, CITY, STATE } from "env.js";
+import { WEATHER_API_KEY, CITY, STATE } from "./env.js";
 
 const clock = document.getElementById("clock");
 const button = document.getElementById("temp");
