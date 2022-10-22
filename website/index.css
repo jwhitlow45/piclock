@@ -1,16 +1,55 @@
+@import url('http://fonts.cdnfonts.com/css/lulo-clean');
+
+html {
+  font-family: 'Lulo Clean', sans-serif;
+}
+
 body {
   background-color: black;
   overflow: hidden;
 }
+
 #container {
   display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
-#clock {
+#curcond {
+  display: flex;
   margin: auto;
-  align-items: center;
+  margin-bottom: 0px;
+}
+
+.cur {
+  border: 2px solid white;
+  width: 10px;
+  height: 10px;
+}
+
+#clock {
+  margin: 3vh auto;
   
   color: white;
-  font-size: 200px;
+  font-size: 32vh;
+  line-height: 36vh;
+  height: 32vh;
+
+  padding-left: 3.75vh;
+}
+
+#forecast {
+  display: flex;
+  margin: auto;
+  margin-top: 0;
+}
+
+.forecast-item {
+  border: 2px solid white;
+  width: 10px;
+  height: 10px;
+}
+
+.forecast-img {
+
 }
