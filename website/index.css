@@ -20,15 +20,19 @@ body {
   display: flex;
   margin: auto;
   margin-bottom: 0px;
+  width: 100%;
 }
 
 #current-cond {
   margin: auto;
   margin-bottom: 0px;
+
+  flex-direction: row;
 }
 
 #clock {
   margin: 1vh auto;
+  margin-bottom: 5vh;
   padding-left: 8vh;
   
   color: white;
@@ -79,6 +83,17 @@ body {
   font-size: 3vh;
 }
 
-#cur-sunrise {
- font-size: 4vh; 
+#cur-temp {
+  font-size: 8vh;
+  font-weight: 500;
+}
+
+#cur-sunrise, #cur-sunset {
+  font-size: 6vh;
+  margin: auto 10vw;
+}
+
+#current-cond {
+  width: 100%;
+  height: auto;
 }

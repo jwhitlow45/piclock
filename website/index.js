@@ -25,7 +25,7 @@ function runClock() {
 
   // update weather every 10 minutes
   if (mins % 10 == 0 && secs == 0) {
-    console.log('dosomething')
+    updateClockWeather();
   }
 
 }
