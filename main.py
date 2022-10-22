@@ -6,6 +6,9 @@ BACKLIGHT = Backlight()
 BACKLIGHT.power = False
 BACKLIGHT.brightness = 25
 
+FACES_THRESHOLD = 3
+DISPLAY_TIMEOUT = 15
+
 def main():
     
     cam = cv2.VideoCapture(0)
@@ -32,13 +35,13 @@ def facial_detection(cam, classifier):
         
         if (len(faces) > 0):
             buffer.append(faces)
-            if len(buffer) > 5:
+            if len(buffer) > FACES_THRESHOLD:
                 print("found face")
                 prevface = datetime.now()
                 BACKLIGHT.power = True
                 buffer = []
         else:
-            if (datetime.now() - prevface).seconds > 10:
+            if (datetime.now() - prevface).seconds > DISPLAY_TIMEOUT:
                 BACKLIGHT.power = False
             buffer = []            
         
