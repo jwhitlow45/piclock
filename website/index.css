@@ -1,7 +1,16 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
 #container {
   display: flex;
+  height: 100vh;
 }
 
-p {
+#clock {
   margin: auto;
+  align-items: center;
+  
+  color: white;
+  font-size: 200px;
 }
