@@ -6,7 +6,7 @@ BACKLIGHT = Backlight()
 BACKLIGHT.power = False
 BACKLIGHT.brightness = 25
 
-FACES_THRESHOLD = 3
+FACES_THRESHOLD = 2
 DISPLAY_TIMEOUT = 15
 
 def main():
