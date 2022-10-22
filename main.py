@@ -6,7 +6,7 @@ BACKLIGHT = Backlight()
 BACKLIGHT.power = False
 BACKLIGHT.brightness = 25
 
-FACES_THRESHOLD = 2
+FACES_THRESHOLD = 1
 DISPLAY_TIMEOUT = 15
 
 def main():
@@ -35,7 +35,7 @@ def facial_detection(cam, classifier):
         
         if (len(faces) > 0):
             buffer.append(faces)
-            if len(buffer) > FACES_THRESHOLD:
+            if len(buffer) >= FACES_THRESHOLD:
                 prevface = datetime.now()
                 BACKLIGHT.power = True
                 buffer = []
